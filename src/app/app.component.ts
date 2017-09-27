@@ -31,7 +31,7 @@ export class AppComponent implements OnInit {
   }
 
   onBooking(customer: Customer) {
-    this.backendclient.post("http://localhost:8080/app/booking/current_bookings",JSON.stringify(customer));
+    this.backendclient.post("http://localhost:8080/app/booking/book",JSON.stringify(customer));
     this.renderTable();
   }
 }
